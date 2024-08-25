@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import SkillComponent from '@/components/SkillComponent.vue'
+import { useDataStore } from '@/stores/data'
+const skillsData = useDataStore().skillsData
 </script>
 
 <template>
@@ -10,12 +12,7 @@ import SkillComponent from '@/components/SkillComponent.vue'
       ones that I consider more important
 
       <div class="skills">
-        <SkillComponent title="ReactJS" level="4" />
-        <SkillComponent title="Angular" level="4" />
-        <SkillComponent title="Typescript" level="4" />
-        <hr />
-        <SkillComponent title="Spanish" level="5" />
-        <SkillComponent title="English" level="4" />
+        <SkillComponent v-for="(skill, index) in skillsData" v-bind:key="index" :skill="skill" />
       </div>
     </div>
   </div>

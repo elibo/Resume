@@ -7,6 +7,7 @@
   padding: 2rem;
   font-weight: normal;
   color: #e4e3e8;
+  font-size: 1.1rem;
 }
 
 a {
@@ -26,7 +27,7 @@ a {
 }
 
 .info {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #bbb7c8;
 }
 

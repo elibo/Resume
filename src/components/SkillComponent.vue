@@ -1,17 +1,19 @@
 <script setup lang="ts">
+import type { SkillType } from '@/types/data'
+import type { PropType } from 'vue'
+
 const props = defineProps({
-  title: String,
-  level: String
+  skill: Object as PropType<SkillType>
 })
+const { name, level } = props.skill!
 const isActive = (n: number) => {
-  const level = Number(props.level)
-  return level === n || n < level
+  return level && (level === n || n < level)
 }
 </script>
 
 <template>
   <div class="skill">
-    <span class="title">{{ props.title }}</span>
+    <span class="title">{{ name }}</span>
     <span class="dots">
       <span class="dot" v-for="n in 5" v-bind:key="n" v-bind:class="{ active: isActive(n) }"></span>
     </span>
