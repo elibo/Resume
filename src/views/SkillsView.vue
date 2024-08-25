@@ -1,14 +1,29 @@
+<script setup lang="ts">
+import SkillComponent from '@/components/SkillComponent.vue'
+</script>
+
 <template>
-  <div>
-    <main>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut lorem tincidunt nisi ornare
-      imperdiet. Quisque odio dui, finibus at purus nec, efficitur euismod turpis. Aliquam a
-      eleifend ante. Integer malesuada convallis dui. Morbi nec justo elit. Nunc egestas id neque
-      condimentum tempor. Pellentesque tincidunt nibh posuere dolor feugiat, quis elementum tortor
-      lacinia. Nunc malesuada leo et viverra ornare. Aenean eu lacus sagittis justo sollicitudin
-      lobortis eu fringilla quam. Vestibulum ex libero, placerat at tempor non, sagittis ac ante.
-      Sed mollis turpis nec lobortis volutpat. Sed venenatis mi eu iaculis rutrum. In aliquam
-      accumsan sem, ut pretium dui pharetra id. Suspendisse quis felis eros. Sed et risus ac ante
-    </main>
+  <div class="main">
+    <div class="header">Let's have a look to some of my skills</div>
+    <div class="info">
+      Since starting working I have worked with tons of technologies but here I only showing those
+      ones that I consider more important
+
+      <div class="skills">
+        <SkillComponent title="ReactJS" level="4" />
+        <SkillComponent title="Angular" level="4" />
+        <SkillComponent title="Typescript" level="4" />
+        <hr />
+        <SkillComponent title="Spanish" level="5" />
+        <SkillComponent title="English" level="4" />
+      </div>
+    </div>
   </div>
 </template>
+
+<style scoped>
+.info {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+</style>

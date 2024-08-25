@@ -2,6 +2,7 @@
 import { RouterView } from 'vue-router'
 import NavigatorComponent from './components/NavigatorComponent.vue'
 import ProfileHeader from './components/ProfileHeader.vue'
+import FooterComponent from './components/FooterComponent.vue'
 </script>
 
 <template>
@@ -11,6 +12,8 @@ import ProfileHeader from './components/ProfileHeader.vue'
   </header>
 
   <RouterView />
+
+  <FooterComponent />
 </template>
 
 <style scoped>
