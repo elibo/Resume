@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import SkillsComponent from './SkillsComponent.vue'
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 </script>
 
 <template>
@@ -8,7 +10,7 @@ import SkillsComponent from './SkillsComponent.vue'
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="section-title text-center">
-            <h2 class="title">About Me</h2>
+            <h2 class="title">{{ t('about.title') }}</h2>
           </div>
         </div>
       </div>
@@ -20,10 +22,9 @@ import SkillsComponent from './SkillsComponent.vue'
             </div>
           </div>
           <div class="about-content mt-50">
-            <h5 class="about-title">Hi There! I'm Elena Pereira</h5>
+            <h5 class="about-title">{{ t('about.subtitle') }}</h5>
             <p>
-              a frontend developer based in Spain. During the last 8 years I've been working in
-              different companies developing applications mostly with Angular and ReactJS.
+              {{ t('about.info') }}
             </p>
             <ul class="clearfix">
               <li>
@@ -32,7 +33,9 @@ import SkillsComponent from './SkillsComponent.vue'
                     <i class="lni-calendar"></i>
                   </div>
                   <div class="info-text">
-                    <p><span>Birthdate:</span> 28 January 1991</p>
+                    <p>
+                      <span>{{ t('about.birth') }}:</span> 28 {{ t('months.january') }} 1991
+                    </p>
                   </div>
                 </div>
               </li>
@@ -52,7 +55,9 @@ import SkillsComponent from './SkillsComponent.vue'
                     <i class="lni-phone-handset"></i>
                   </div>
                   <div class="info-text">
-                    <p><span>Phone:</span> +34 617 763 680</p>
+                    <p>
+                      <span>{{ t('about.phone') }}:</span> +34 617 763 680
+                    </p>
                   </div>
                 </div>
               </li>
@@ -62,7 +67,9 @@ import SkillsComponent from './SkillsComponent.vue'
                     <i class="lni-map-marker"></i>
                   </div>
                   <div class="info-text">
-                    <p><span>Location:</span> Ourense, Spain</p>
+                    <p>
+                      <span>{{ t('about.location') }}:</span> Ourense, {{ t('about.spain') }}
+                    </p>
                   </div>
                 </div>
               </li>

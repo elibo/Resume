@@ -547,7 +547,7 @@ p {
   }
 }
 .navigation .navbar .navbar-nav .nav-item {
-  margin-left: 30px;
+  margin-right: 30px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navigation .navbar .navbar-nav .nav-item {
@@ -559,9 +559,7 @@ p {
     margin: 4px 0;
   }
 }
-.navigation .navbar .navbar-nav .nav-item:first-child {
-  margin-left: 0;
-}
+
 .navigation .navbar .navbar-nav .nav-item a {
   text-transform: uppercase;
   font-size: 16px;

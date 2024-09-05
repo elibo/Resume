@@ -1,0 +1,56 @@
+{
+  "months": {
+    "january": "January",
+    "february": "February",
+    "july": "July",
+    "august": "August",
+    "december": "December"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "education": "Education",
+    "work": "Work",
+    "hobbies": "Hobbies"
+  },
+  "header": {
+    "title": "Hello, I'm",
+    "job": "Frontend Developer"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Hi There! I'm Elena Pereira",
+    "info": "a frontend developer based in Spain. During the last 8 years I've been working in different companies developing applications mostly with Angular and ReactJS.",
+    "birth": "Birthdate",
+    "phone": "Phone",
+    "location": "Location",
+    "spain": "Spain"
+  },
+  "skills": {
+    "mobile": "Mobile",
+    "lang": "Languages"
+  },
+  "education": {
+    "title": "Educaction",
+    "systems": "Higher National Diploma - Systems Management",
+    "systems-info": "Learn all about the different OS and how to manage the networks and users in them.",
+    "apps": "Higher National Diploma - Multi-platform Application Development",
+    "apps-info": "Gained skills for game development as well as mobile and web applications."
+  },
+  "work": {
+    "title": "My Work Experience",
+    "sparta": "Trading company for commodities with ReactJS and ChartJs as its primary frameworks. For every program, a suitable reusable code had to be created. Understood how to handle a complete migration from JavaScript to TypeScript. Enhanced my English conversational abilities and mentored the less experienced developers ",
+    "plexus": "Learnt how to work as a team using gitflow and agile methodologies. Used pair programming and code reviews to create and maintain clean, understandable code. Created from scratch a component library using Storybook and StyledComponents (for ReactJS) and kept working with Angular and Typescript. Started managing teams and helping devs in their day to day tasks ",
+    "citecam": "I gained experience using frameworks like ReactJS and AngularJS/Angular2. Learned how to launch Android and iOS apps and about Ionic framework for mobile applications. I gained a lot of knowledge about BLE devices and how phones interact with them. I also dabbled in backend development using Node.js, Express and Mongodb. "
+  },
+  "hobbies": {
+    "title": "My Hobbies",
+    "subtitle": "Even though I enjoy my job I love to spend my free time doing multiple activities. Some of those include: ",
+    "games": "Playing video games",
+    "games2": "There is something special about the conection you can make with a game and what it can give you in return ",
+    "bike": "Motorcycle riding",
+    "bike2": "There is nothing I enjoy more than the freedom of just me, my bike and the road. Any little spare time I try to go for an hour to relax",
+    "books": "Reading books",
+    "books2": "I'm an avid reader and always try to read at least one book per month. If my schedule permits it maybe more than that. "
+  }
+}

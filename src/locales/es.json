@@ -1,0 +1,56 @@
+{
+  "months": {
+    "january": "Enero",
+    "february": "Febrero",
+    "july": "Julio",
+    "august": "Agosto",
+    "december": "Diciembre"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "education": "Educación",
+    "work": "Trabajo",
+    "hobbies": "Hobbies"
+  },
+  "header": {
+    "title": "Hola, soy",
+    "job": "Desarrolladora de Frontend"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Hola Hola! Soy Elena Pereira",
+    "info": "una desarrolladora de frontend que reside en España. Durante los últimos 8 años he estado trabajando para distintas empresas usando tecnologías como Angular y ReactJS.",
+    "birth": "Fecha de nacimiento",
+    "phone": "Teléfono",
+    "location": "Residencia",
+    "spain": "España"
+  },
+  "skills": {
+    "mobile": "Móviles",
+    "lang": "Idiomas"
+  },
+  "education": {
+    "title": "Educación",
+    "systems": "Técnico Superior en Administración de Sistemas Informáticos en Red",
+    "systems-info": "Ciclo superior que me enseñó sobre los distintos sistemas operativos y como tratar sus usuarios y redes.",
+    "apps": "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma",
+    "apps-info": "Manejo desde desarrollo de juegos en 3d como aplicaciones web y de móviles"
+  },
+  "work": {
+    "title": "Puestos de Trabajo",
+    "sparta": "Compañía de trading que usaba ReactJS y ChartJS como herramientas principales. Creación de código reusable para toda la aplicación. Llevada a cabo una migración completa de JS a TS. Debido a ser una empresa internacional mejoré sustancialmente mis habilidades de comunicación en inglés y en la medida de lo posible intentaba ayudar y formar a mis compañeros",
+    "plexus": "Empiezo a usar metodologías agile y gitflow para el control de versiones. Se intentaba hacer pair programming para enseñar a los programadores mas juniors. Tuve que llevar a cabo la realización de una librería de componentes desde cero usando Storybook y Styled Components. Después de un tiempo termine llevando varios equipos de desarroladores como una figura mas TechLead",
+    "citecam": "Empecé a programar con AngularJs y despues con ReactJS. Aprendí a desarrollar aplicaciones para iOS y Android mediante Ionic y a desplegar a las diferentes stores. Gané conocimiento sobre como funcionan y se comunican los dispositivos BLE. Me metí un poco en backend tocando Node.js, Express y MongoDB"
+  },
+  "hobbies": {
+    "title": "Mis Hobbies",
+    "subtitle": "Aunque me encanta mi trabajo, también me gusta disfrutar del poco tiempo libre que tengo. Algunas actividades que hago: ",
+    "games": "Jugar a videojuegos",
+    "games2": "Hay algo especial en la conexión que llegas a establecer cuando juegas a un videojuego y en lo mucho que puede llegar a darte",
+    "bike": "Montar en moto",
+    "bike2": "No hay nada como disfrutar de la libertad de tu, tu moto y la carretera. Siempre intento salir un rato para relajarme",
+    "books": "Leer",
+    "books2": "Me encanta leer y si puedo intento leer un libro al mes como mínimo. Si me lo permite el horario quizás mas de eso "
+  }
+}

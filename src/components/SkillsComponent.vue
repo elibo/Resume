@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
+
 <template>
   <div class="col-xl-6 col-lg-6">
     <div class="about-skills pt-25">
@@ -67,7 +72,7 @@
         </div>
       </div>
       <div class="skill-item mt-25">
-        Mobile
+        {{ t('skills.mobile') }}
         <div class="skill-header">
           <h6 class="skill-title">Java / Kotlin / Swift</h6>
           <div class="skill-percentage">
@@ -137,7 +142,7 @@
         </div>
       </div>
       <div class="skill-item mt-25">
-        Languages
+        {{ t('skills.lang') }}
         <div class="skill-header">
           <h6 class="skill-title">Spanish</h6>
           <div class="skill-percentage">

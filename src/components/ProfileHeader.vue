@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
+
 <template>
   <header id="home" class="header-area">
     <div id="parallax" class="header-content d-flex align-items-center">
@@ -35,9 +40,9 @@
         <div class="row align-items-center">
           <div class="col-xl-5 col-lg-6">
             <div class="header-content-right">
-              <h4 class="sub-title">Hello, I’m</h4>
+              <h4 class="sub-title">{{ t('header.title') }}</h4>
               <h1 class="title">Elena Pereira</h1>
-              <p>A Frontend Web Developer</p>
+              <p>{{ t('header.job') }}</p>
             </div>
           </div>
           <div class="col-lg-6 offset-xl-1">
