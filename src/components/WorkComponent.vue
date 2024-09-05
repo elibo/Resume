@@ -1,7 +1,3 @@
-<script lang="ts">
-const showOverlay = false
-</script>
-
 <template>
   <section id="work" class="work-area pt-125 pb-130">
     <div class="container">
