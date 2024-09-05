@@ -7,7 +7,7 @@ const { t } = useI18n()
   <div class="navigation fixed-top">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-10">
           <nav class="navbar navbar-expand-lg">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
@@ -25,22 +25,26 @@ const { t } = useI18n()
               <li class="nav-item">
                 <a class="page-scroll" href="#hobbies">{{ t('nav.hobbies') }}</a>
               </li>
-              <li
-                class="option"
-                :class="{ active: $i18n.locale === 'es' }"
-                @click="$i18n.locale = 'es'"
-              >
-                ES
-              </li>
-              <li
-                class="option"
-                :class="{ active: $i18n.locale === 'en' }"
-                @click="$i18n.locale = 'en'"
-              >
-                EN
-              </li>
             </ul>
           </nav>
+        </div>
+        <div class="col-lg-2">
+          <ul class="lang">
+            <li
+              class="option"
+              :class="{ active: $i18n.locale === 'es' }"
+              @click="$i18n.locale = 'es'"
+            >
+              ES
+            </li>
+            <li
+              class="option"
+              :class="{ active: $i18n.locale === 'en' }"
+              @click="$i18n.locale = 'en'"
+            >
+              EN
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -49,17 +53,26 @@ const { t } = useI18n()
 
 <style lang="scss">
 @media (max-width: 900px) {
-  .option {
-    margin: 4px 0;
+  .lang {
+    position: relative;
+    left: 150px;
+    top: 5px;
+    .option {
+      margin: 7px 0;
+      font-size: 0.8rem;
+    }
   }
 }
-.option {
-  padding: 0 0.25rem;
-  &:hover {
-    cursor: pointer;
-  }
-  &.active {
-    color: #48da9b;
+.lang {
+  display: flex;
+  .option {
+    padding: 0 0.15rem;
+    &:hover {
+      cursor: pointer;
+    }
+    &.active {
+      color: #48da9b;
+    }
   }
 }
 </style>
