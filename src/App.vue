@@ -1,18 +1,19 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
 import NavigatorComponent from './components/NavigatorComponent.vue'
 import ProfileHeader from './components/ProfileHeader.vue'
 import FooterComponent from './components/FooterComponent.vue'
+import AboutMe from './components/AboutMe.vue'
+import HobbyComponent from './components/HobbyComponent.vue'
+import WorkComponent from './components/WorkComponent.vue'
 </script>
 
 <template>
+  <!-- <TemplateComponent /> -->
   <NavigatorComponent />
-  <header>
-    <ProfileHeader name="ELENA" surname="PEREIRA" />
-  </header>
-
-  <RouterView />
-
+  <ProfileHeader name="ELENA" surname="PEREIRA" />
+  <AboutMe />
+  <HobbyComponent />
+  <WorkComponent />
   <FooterComponent />
 </template>
 

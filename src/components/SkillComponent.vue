@@ -1,45 +1,86 @@
-<script setup lang="ts">
-import type { SkillType } from '@/types/data'
-import type { PropType } from 'vue'
-
-const props = defineProps({
-  skill: Object as PropType<SkillType>
-})
-const { name, level } = props.skill!
-const isActive = (n: number) => {
-  return level && (level === n || n < level)
-}
-</script>
-
 <template>
-  <div class="skill">
-    <span class="title">{{ name }}</span>
-    <span class="dots">
-      <span class="dot" v-for="n in 5" v-bind:key="n" v-bind:class="{ active: isActive(n) }"></span>
-    </span>
+  <div class="col-xl-5 offset-xl-1 col-lg-6">
+    <div class="about-skills pt-25">
+      <div class="skill-item mt-25">
+        <div class="skill-header">
+          <h6 class="skill-title">HTML+CSS</h6>
+          <div class="skill-percentage">
+            <div class="count-box counted">
+              <span class="counter">90</span>
+            </div>
+            %
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="bar-inner">
+            <div class="bar progress-line" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-item mt-25">
+        <div class="skill-header">
+          <h6 class="skill-title">ReactJS</h6>
+          <div class="skill-percentage">
+            <div class="count-box counted">
+              <span class="counter">85</span>
+            </div>
+            %
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="bar-inner">
+            <div class="bar progress-line" style="width: 85%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-item mt-25">
+        <div class="skill-header">
+          <h6 class="skill-title">Typescript</h6>
+          <div class="skill-percentage">
+            <div class="count-box counted">
+              <span class="counter">75</span>
+            </div>
+            %
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="bar-inner">
+            <div class="bar progress-line" style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-item mt-25">
+        <div class="skill-header">
+          <h6 class="skill-title">Spanish</h6>
+          <div class="skill-percentage">
+            <div class="count-box counted">
+              <span class="counter">100</span>
+            </div>
+            %
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="bar-inner">
+            <div class="bar progress-line" style="width: 100%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-item mt-25">
+        <div class="skill-header">
+          <h6 class="skill-title">English</h6>
+          <div class="skill-percentage">
+            <div class="count-box counted">
+              <span class="counter">90</span>
+            </div>
+            %
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="bar-inner">
+            <div class="bar progress-line" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
-
-<style scoped>
-.title {
-  font-size: 2rem;
-}
-.skill {
-  padding: 1rem;
-}
-.dots {
-  display: flex;
-  flex-direction: row;
-}
-.dot {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb7c8;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 1rem;
-}
-.dot.active {
-  background-color: #48da9b;
-}
-</style>

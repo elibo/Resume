@@ -1,36 +1,73 @@
 <script setup lang="ts">
-import { useDataStore } from '@/stores/data'
-
-const profile = useDataStore().profileData
+import SkillComponent from './SkillComponent.vue'
 </script>
 
 <template>
-  <div>
-    <div class="header">{{ profile.header.title }}</div>
-    <div class="info">
-      {{ profile.header.info }}
-    </div>
-    <div class="header">{{ profile.contact.header }}</div>
-    <span v-for="(data, index) in profile.contact.data" v-bind:key="index">
-      <div class="subheader">
-        <i :class="data.icon" style="font-size: 1rem"></i> {{ data.title }}
+  <section id="about" class="about-area pt-125 pb-130">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="title">About Me</h2>
+          </div>
+        </div>
       </div>
-      <div class="info">{{ data.info }}</div>
-    </span>
-
-    <div class="icons">
-      <a
-        v-for="(social, index) in profile.socials"
-        v-bind:key="index"
-        :href="social.link"
-        :title="social.title"
-        target="_blank"
-        :download="social.download ? 'ElenaPereiraCV.pdf' : ''"
-      >
-        <i :class="social.icon" style="font-size: 2rem"></i>
-      </a>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="about-content mt-50">
+            <h5 class="about-title">Hi There! I'm Elena Pereira</h5>
+            <p>
+              a frontend developer based in Spain. During the last 8 years I've been working in
+              different companies developing applications mostly with Angular and ReactJS.
+            </p>
+            <ul class="clearfix">
+              <li>
+                <div class="single-info d-flex align-items-center">
+                  <div class="info-icon">
+                    <i class="lni-calendar"></i>
+                  </div>
+                  <div class="info-text">
+                    <p><span>Birthdate:</span> 28 January 1991</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="single-info d-flex align-items-center">
+                  <div class="info-icon">
+                    <i class="lni-envelope"></i>
+                  </div>
+                  <div class="info-text">
+                    <p><span>Email:</span> epv1991@gmail.com</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="single-info d-flex align-items-center">
+                  <div class="info-icon">
+                    <i class="lni-phone-handset"></i>
+                  </div>
+                  <div class="info-text">
+                    <p><span>Phone:</span> +34 617 763 680</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="single-info d-flex align-items-center">
+                  <div class="info-icon">
+                    <i class="lni-map-marker"></i>
+                  </div>
+                  <div class="info-text">
+                    <p><span>Location:</span> Ourense, Spain</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <SkillComponent />
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
