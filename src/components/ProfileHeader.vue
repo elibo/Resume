@@ -42,7 +42,7 @@
           </div>
           <div class="col-lg-6 offset-xl-1">
             <div class="header-image d-none d-lg-block">
-              <img src="/src/assets/avatar.jpg" alt="hero" />
+              <img src="/src/assets/avatar.jpg" alt="Me" />
             </div>
           </div>
         </div>
@@ -63,9 +63,10 @@
                   </li>
                   <li>
                     <a
-                      href="/public/files/ElenaPereiraCV.pdf"
+                      href="/resume/public/files/ElenaPereiraCV.pdf"
                       download="ElenaPereira.pdf"
                       title="My CV"
+                      target="_blank"
                       ><i class="lni-cloud-download"></i
                     ></a>
                   </li>

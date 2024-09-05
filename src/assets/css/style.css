@@ -805,6 +805,10 @@ p {
   margin: 0 auto;
   position: relative;
 }
+.header-image.small {
+  max-width: 230px;
+}
+
 .header-image::before {
   position: absolute;
   content: '';
@@ -939,7 +943,6 @@ p {
 }
 .about-content .single-info .info-text {
   padding-left: 10px;
-  padding-bottom: 0;
 }
 .about-content .single-info .info-text p span {
   color: #32333c;
@@ -1073,18 +1076,17 @@ p {
   position: relative;
 }
 .single-work .work-image {
-  height: 350px;
-  align-content: center;
-  font-size: 1.2rem;
-}
-
-.single-work .work-image .work-title {
   color: #48da9b;
   align-content: center;
   font-size: 1.4rem;
 }
 
-.single-work .work-image .work-title span {
+.single-work .work-image .work-title {
+  align-content: center;
+  font-size: 1.2rem;
+}
+
+.single-work .work-image .work-title {
   color: #000;
   align-content: center;
   font-size: 1rem;

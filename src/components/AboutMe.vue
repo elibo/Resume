@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SkillComponent from './SkillComponent.vue'
+import SkillsComponent from './SkillsComponent.vue'
 </script>
 
 <template>
@@ -12,8 +12,13 @@ import SkillComponent from './SkillComponent.vue'
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-6">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="col-sm-12">
+            <div class="header-image small d-sm-block d-lg-none">
+              <img src="/src/assets/avatar.jpg" alt="Me" />
+            </div>
+          </div>
           <div class="about-content mt-50">
             <h5 class="about-title">Hi There! I'm Elena Pereira</h5>
             <p>
@@ -64,25 +69,8 @@ import SkillComponent from './SkillComponent.vue'
             </ul>
           </div>
         </div>
-        <SkillComponent />
+        <SkillsComponent />
       </div>
     </div>
   </section>
 </template>
-
-<style scoped>
-:nth-child(2) {
-  padding-bottom: 1rem;
-}
-
-.subheader {
-  font-size: 1.3rem;
-  color: #ffffff;
-}
-
-.icons {
-  padding-top: 2rem;
-  display: flex;
-  justify-content: space-evenly;
-}
-</style>
