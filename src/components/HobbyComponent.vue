@@ -36,14 +36,14 @@ const { t } = useI18n()
         <div class="col-lg-4 col-md-6 col-sm-8">
           <div class="single-service text-center mt-30">
             <div class="service-icon">
-              <i class="lni-scooter"></i>
+              <i class="lni-island"></i>
             </div>
             <div class="service-content">
               <h4 class="service-title">
-                <a href="#contact">{{ t('hobbies.bike') }}</a>
+                <a href="#contact">{{ t('hobbies.travel') }}</a>
               </h4>
               <p>
-                {{ t('hobbies.bike2') }}
+                {{ t('hobbies.travel2') }}
               </p>
             </div>
           </div>
