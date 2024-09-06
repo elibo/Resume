@@ -55,7 +55,7 @@ const { t } = useI18n()
 @media (max-width: 900px) {
   .lang {
     position: relative;
-    left: 150px;
+    justify-content: center;
     top: 5px;
     .option {
       margin: 7px 0;
